@@ -1,5 +1,3 @@
-INDEX.HTML
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,7 +23,7 @@ body {
   margin-top: 40px;
   margin-right: 200px;
   margin-left: 200px;
-  
+  text-transform: lowercase;
 }
 
 /* Position HZL logo */
@@ -38,10 +36,8 @@ padding: 20px 20px;
 h1 {
   color: black;
   font-weight: bold;
-  text-transform: uppercase;
   padding: 10px 10px;
-
-}
+  }
 
 /* Edit nav bar */
 .navbar {
@@ -60,10 +56,12 @@ margin-top: 0;
 .topnav a {
 color: black;
 float: right;
+font-weight: bold;
 padding: 30px 30px;
 text-decoration: none;
 font-size: 40px;
 text-transform: lowercase;
+box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* Change the color of topnav links on hover */
@@ -81,19 +79,20 @@ text-transform: lowercase;
 /* main container*/
 .container {
 border-radius: 5px;
+border: 1px solid #e1e6e8; /* with or without*/
+margin-top: 15px;
+margin-bottom: 15px;
 background-color: white;
 font-size: 15px;
 display: flex;
 justify-content: space-between;
 text-align: center;
-padding: 30px 30px;
+padding: 15px 15px;
 text-transform: lowercase;
 display: grid;
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 grid-column-gap: 10px; /* Adjust the spacing value as needed */
 }
-
-
 
 /* rockos modern life 1993 title */
 .custom-link {
@@ -113,21 +112,22 @@ color: black;
 .image-container {
   display: flex;
   justify-content: center;
-  padding: 20px 20px;
+  padding: 10px 10px;
   }
-
+  
 /* edit horizontal gallery */
 .marquee-container {
   white-space: nowrap;
   overflow: hidden;
-}
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
 
 .marquee-container img {
   display: inline-block;
-  margin-right: 10px; /* Adjust this value to set the space between images */
+  margin-right: 1px; /* Adjust this value to set the space between images */
   animation: marquee 10s linear infinite; /* Adjust this value to set the speed of the animation */
   padding: 10px 10px;
-}
+      }
 
 @keyframes marquee {
   0% { transform: translateX(0); }
@@ -135,23 +135,12 @@ color: black;
 }
 
 .footer {
-overflow: hidden;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
-
-/* 4 seasons 52 eps */
-h4 {
-  padding: 10px 10px;
-}
-
-.col-sm-4 {
- padding: 50px 20px; 
-}
-
-
-
-  </style>
+</style>
 
 <title>Binge-Worthy Shows Challenge 📺</title>
+
 <!-- Bootstrap -->
 <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -201,10 +190,10 @@ crossorigin="anonymous">
 
 <!-- marquee gallery LEAVE -->
 <div class="marquee-container">
-     <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/675/original/RML_gif04.gif?1708074890" width="600" height="400" alt="moving_pic">
-  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/676/original/RML_gif.gif?1708074976" width="600" height="400" alt="moving_pic">
-   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/677/original/RML_gif01.gif?1708075019" width="600" height="400" alt="moving_pic">
-   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/675/original/RML_gif04.gif?1708074890" width="600" height="400" alt="moving_pic">
+     <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/675/original/RML_gif04.gif?1708074890" width="500" height="350" alt="moving_pic">
+  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/676/original/RML_gif.gif?1708074976" width="500" height="350" alt="moving_pic">
+   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/677/original/RML_gif01.gif?1708075019" width="500" height="350" alt="moving_pic">
+   <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/675/original/RML_gif04.gif?1708074890" width="500" height="350" alt="moving_pic">
   </div>
 
 
@@ -273,10 +262,9 @@ crossorigin="anonymous">
 <!-- edit seasons -->
 <h2>see all 4 seasons with episode titles</h2>
 
-
 <div class="container">
   <div class="row row-cols-4">
-    <div class="image"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/681/original/RML_s1.jpg?1708075529" style="width:300px;height:450px;"></div>
+        <div class="image"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/681/original/RML_s1.jpg?1708075529" style="width:300px;height:450px;"></div>
     <div class="image"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/682/original/RML_s2.jpg?1708075573" style="width:300px;height:450px;"></a></div>
     <div class="image"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/683/original/RML_s3.jpg?1708075599" style="width:300px;height:450px;"></a></div>
     <div class="image"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/115/684/original/RML_s4.jpg?1708075620" style="width:300px;height:450px;"></a></div>
@@ -363,7 +351,8 @@ crossorigin="anonymous">
   <li>Tooth and Nail</li>
   <li>Wacky Delly</li>
   <li>The Big Question</li>
-  <li>The Big Answer" "The Wedding</li>
+  <li>The Big Answer
+  <li>The Wedding</li>
   <li>An Elk for Heffer</li>
   <li>I See London, I See France</li>
   <li>The Fat Lands</li>
